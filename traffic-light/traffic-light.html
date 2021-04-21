@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAFFICLIGHT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #5a5a5a;
+        }
+
+        .traffic-light {
+            display: flex;
+            flex-direction: column;
+            background-color: #5a5a5a;
+            width: 10%;
+            align-items: center;
+            border-radius: 10px;
+            border: 5px solid #fff;
+        }
+
+        .circle1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            margin: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px 5px #c0392b;
+            animation-name: red1;
+            animation-duration: 13s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        .circle2 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: yellow;
+            box-shadow: 0 0 20px 5px #f1c40f;
+            margin: 10px;
+            animation-name: yellow1;
+            animation-duration: 13s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        .circle3 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #2ecc71;
+            margin: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px 5px #2ecc71;
+            animation-name: green1;
+            animation-duration: 13s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes red1 {
+            0% {
+                opacity: 1
+            }
+
+            10% {
+                opacity: 1
+            }
+
+            30% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: .1
+            }
+
+            90% {
+                opacity: .1
+            }
+
+            100% {
+                opacity: .1
+            }
+        }
+
+        @keyframes yellow1 {
+            0% {
+                opacity: .1
+            }
+
+            25% {
+                opacity: .1
+            }
+
+            50% {
+                opacity: 1
+            }
+
+            75% {
+                opacity: .1
+            }
+
+            100% {
+                opacity: .1
+            }
+        }
+
+        @keyframes green1 {
+            0% {
+                opacity: .1
+            }
+
+            35% {
+                opacity: .1
+            }
+
+            45% {
+                opacity: .1
+            }
+
+            65% {
+                opacity: 1
+            }
+
+            85% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="traffic-light">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+    </div>
+</body>
+
+</html>
